@@ -616,9 +616,10 @@ require('lazy').setup({
       --        For example, to see the options for `lua_ls`, you could go to: https://luals.github.io/wiki/settings/
       local servers = {
         -- clangd = {},
-        -- gopls = {},
+        gopls = {},
         pyright = {},
-        -- rust_analyzer = {},
+        rust_analyzer = {},
+        bashls = {},
         -- ... etc. See `:help lspconfig-all` for a list of all the pre-configured LSPs
         --
         -- Some languages (like typescript) have entire language plugins that can be useful:
@@ -708,10 +709,16 @@ require('lazy').setup({
         }
       end,
       formatters_by_ft = {
+        bzl = { 'buildifier' },
         lua = { 'stylua' },
-        -- Conform can also run multiple formatters sequentially
+        javascript = { 'prettier' },
+        json = { 'jq' },
         python = { 'black', 'ruff_fix' },
-        --
+        rust = { 'rustfmt' },
+        sh = { 'shfmt' },
+        typescript = { 'prettier' },
+        typescriptreact = { 'prettier' },
+        go = { 'gofmt' },
         -- You can use 'stop_after_first' to run the first available formatter from the list
         -- javascript = { "prettierd", "prettier", stop_after_first = true },
       },
