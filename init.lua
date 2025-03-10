@@ -713,7 +713,7 @@ require('lazy').setup({
         lua = { 'stylua' },
         javascript = { 'prettier' },
         json = { 'jq' },
-        python = { 'black', 'ruff_fix' },
+        python = { 'isort', 'black', 'ruff_fix' },
         rust = { 'rustfmt' },
         sh = { 'shfmt' },
         typescript = { 'prettier' },
