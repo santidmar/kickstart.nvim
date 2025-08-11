@@ -680,6 +680,7 @@ require('lazy').setup({
         kotlin_language_server = {},
         ts_ls = {},
         helm_ls = {},
+        protols = {},
 
         -- ... etc. See `:help lspconfig-all` for a list of all the pre-configured LSPs
         --
