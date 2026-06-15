@@ -782,8 +782,8 @@ require('lazy').setup({
         python = { 'isort', 'black', 'ruff_fix' },
         rust = { 'rustfmt' },
         sh = { 'shfmt' },
-        typescript = { 'prettier' },
-        typescriptreact = { 'prettier' },
+        typescript = { 'biome' },
+        typescriptreact = { 'biome' },
         go = { 'gofumpt' },
         kotlin = { 'ktfmt' },
         -- You can use 'stop_after_first' to run the first available formatter from the list
