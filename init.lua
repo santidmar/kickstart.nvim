@@ -681,6 +681,7 @@ require('lazy').setup({
         ts_ls = {},
         helm_ls = {},
         prismals = {},
+        biome = {},
 
         -- ... etc. See `:help lspconfig-all` for a list of all the pre-configured LSPs
         --
@@ -781,8 +782,8 @@ require('lazy').setup({
         python = { 'isort', 'black', 'ruff_fix' },
         rust = { 'rustfmt' },
         sh = { 'shfmt' },
-        typescript = { 'biome' },
-        typescriptreact = { 'biome' },
+        typescript = { 'biome-check' },
+        typescriptreact = { 'biome-check' },
         go = { 'gofumpt' },
         kotlin = { 'ktfmt' },
         -- You can use 'stop_after_first' to run the first available formatter from the list
