@@ -4,3 +4,7 @@ test.sh
 nvim
 
 spell/
+
+# Track nvim-pack-lock.json in this personal configuration so plugin revisions are reproducible.
+
+.DS_Store
